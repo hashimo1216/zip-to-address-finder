@@ -1,0 +1,28 @@
+@() @main("Address Finder") {
+<div class="p-container">
+  <div class="c-container">
+    <h1>Please enter your zip code</h1>
+    <form class="form-container">
+      <div class="input-container">
+        <input
+          class="zip-first"
+          type="text"
+          minlength="3"
+          maxlength="3"
+          required
+        />
+        <p>-</p>
+        <input
+          class="zip-last"
+          type="text"
+          minlength="4"
+          maxlength="4"
+          required
+        />
+      </div>
+      <button>SEND</button>
+    </form>
+    <p class="address-container">Address: <span id="address-info"></span></p>
+  </div>
+</div>
+}
